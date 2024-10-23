@@ -1,1 +1,17 @@
-https://www.ilovepdf.com/download/s84st4A0dk6g8fqqght0b10jxdkh49bmb8mnv8c7xkn1fAwz1h059kh5qg95bh3tjkbcr69t32kvnjc4njvfvd67hA4ts423y7p1fy1cAczv65cv58kp6tvf1t0Aybggvsh46k0rg2t3w2pxxbd30ldbcbqr6Amr2frxd70jb6d1wnrh5hl1/92
+git clone https://github.com/sasukee004/led
+python blink.py
+
+git clone https://github.com/sasukee004/4seg
+python clock.py
+
+import time
+import picamera
+camera = picamera.PiCamera()
+camera.resolution(1024, 768)
+camera.start_preview()
+time.sleep(2)
+camera.capture('test.jpg')
+camera.stop_preview()
+
+sudo apt-get install python-picamera
+sudo apt-get install python3-picamera
